@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#52BAB3</item>
+        <item name="android:logo">@drawable/ic_launcher</item>
+    </style>
+
+    <style name="CustomWindowTitleTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">40dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+</resources>

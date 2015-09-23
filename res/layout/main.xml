@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/background_light">
+
+    <ListView
+             android:id="@+id/listView"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+    </ListView>
+
+    <TextView
+            android:id="@+id/board"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" />
+
+    <TextView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/board"
+            android:layout_below="@id/board" />
+
+    <TextView
+            android:id="@+id/release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/loginDate_tv"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/loginDate_tv" />
+    <TextView
+            android:id="@+id/product"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" />
+
+    <TextView
+            android:id="@+id/mobileId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/board"
+            android:layout_below="@id/board" />
+
+    <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/loginDate_tv"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/loginDate_tv" />
+
+
+</LinearLayout>
+
