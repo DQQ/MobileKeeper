@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">手机管家</string>
+    <string name="tab_menu_alert">提醒</string>
+    <string name="tab_menu_profile">信息</string>
+    <string name="tab_menu_pay">我的</string>
+    <string name="tab_menu_setting">设置</string>
 </resources>

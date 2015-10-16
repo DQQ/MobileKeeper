@@ -5,53 +5,49 @@
               android:layout_height="fill_parent"
               android:background="@android:color/background_light">
 
-    <ListView
-             android:id="@+id/listView"
-             android:layout_width="fill_parent"
-             android:layout_height="wrap_content" >
-    </ListView>
+    <RadioGroup
+            android:id="@+id/rg_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_white"
+            android:orientation="horizontal">
+        <RadioButton
+                android:id="@+id/rb_channel"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_channel"
+                android:text="@string/tab_menu_alert" />
 
-    <TextView
-            android:id="@+id/board"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp" />
+        <RadioButton
+                android:id="@+id/rb_message"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_message"
+                android:text="@string/tab_menu_profile" />
+        <RadioButton
+                android:id="@+id/rb_better"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_better"
+                android:text="@string/tab_menu_pay" />
+        <RadioButton
+                android:id="@+id/rb_setting"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_setting"
+                android:text="@string/tab_menu_setting"/>
+    </RadioGroup>
 
-    <TextView
-            android:id="@+id/model"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/board"
-            android:layout_below="@id/board" />
+    <View
+            android:id="@+id/div_tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_above="@id/rg_tab_bar"
+            android:background="@color/div_white" />
 
-    <TextView
-            android:id="@+id/release"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/loginDate_tv"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@+id/loginDate_tv" />
-    <TextView
-            android:id="@+id/product"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp" />
-
-    <TextView
-            android:id="@+id/mobileId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/board"
-            android:layout_below="@id/board" />
-
-    <TextView
-            android:id="@+id/author"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/loginDate_tv"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@+id/loginDate_tv" />
-
+    <FrameLayout
+            android:id="@+id/ly_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/div_tab_view">
+    </FrameLayout>
 
 </LinearLayout>
 
